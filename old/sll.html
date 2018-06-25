@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SLLs</title>
+</head>
+<body>
+<h1>Check the console</h1>
+<script>
+	function Node(val){
+		this.val = val;
+		this.next = null;
+	}
+
+	function SLL(){
+		this.head = null;
+		this.add = function(val){
+			if(this.head == null){
+				this.head = new Node(val);
+				return this;
+			}
+			var runner = this.head;
+			while(runner.next != null){
+				runner = runner.next;
+			}
+			runner.next = new Node(val);
+			return this;
+		}
+		this.addFront = function(val){
+			var temp = this.head;
+			this.head = new Node(val);
+			this.head.next = temp;
+			return this;
+		}
+	}
+
+	var listy = new SLL();
+	listy.add(1).add(2).add(3).add(4).add(5);
+	listy.addFront("Rudy");
+	console.log(listy);
+</script>
+
+</body>
+</html>
