@@ -9,9 +9,10 @@ function fib(num) {
     fibs.push(fibs[fibs.length - 1] + fibs[fibs.length - 2] );
   }
   console.log("fib of " + num + " = " + fibs[fibs.length-1])
+  console.log(fibs);
   return fibs[fibs.length - 1];
 }
-// fib(1)
+fib(26)
 
 // Fibonacci Recurse
 function fibR(num) {
@@ -21,4 +22,4 @@ function fibR(num) {
     }
     return fibR(num-1) + fibR(num-2)
 }
-console.log(fibR(5))
+// console.log(fibR(5))

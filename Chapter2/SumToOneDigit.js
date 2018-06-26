@@ -13,5 +13,5 @@ function sumToOneDigit(num) {
   }
   sumToOneDigit(num)
 }
-sumToOneDigit(16)
+sumToOneDigit(22)
 
