@@ -1,10 +1,9 @@
 // Sum to one digit 
 function sumToOneDigit(num) {
   var result = 0;
-  var mult = 10;
   while (num > 0) {
-    result += Math.floor(num % mult)
-    num -= Math.floor(num % mult)
+    result += Math.floor(num % 10)
+    num -= Math.floor(num % 10)
     num = num/10
   }
   num = result
@@ -14,6 +13,5 @@ function sumToOneDigit(num) {
   }
   sumToOneDigit(num)
 }
-sumToOneDigit(66)
+sumToOneDigit(16)
 
-// console.log(10/10)
