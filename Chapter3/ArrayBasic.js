@@ -11,3 +11,6 @@ function pushFront(val) {
 }
 // pushFront(90)
 
+function popFront(arr, ) {
+  
+}
