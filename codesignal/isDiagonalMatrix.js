@@ -14,7 +14,7 @@ function isDiagonalMatrix(matrix) {
   console.log(true);
   return true
 }
-matrix = [[1, 0, 0], 
+matrix = [[1, 0 ,0], 
           [0, 5, 0], 
           [0, 0, 3]
          
